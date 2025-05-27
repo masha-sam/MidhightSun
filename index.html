@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мой сайт</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/Логотип(header__logo).png" type="image">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=El+Messiri:wght@400..700&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://wsxzaq127.github.io/style.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container container_header">
+                <img src="img/Логотип(header__logo).png" class="header__logo">
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="index.html" class="nav__link">
+                            Главная
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#about" class="nav__link">
+                            О фильме
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#gallery" class="nav__link">
+                            Скриншоты
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="actors.html" class="nav__link">
+                            Об актерах
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <button class="burger" onclick="navOpen()">
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="hero-block" >
+            <div class="container container_hero-block">
+                <img src="img/hero-block__img.png" class="hero-block__img">
+                <div class="hero-block__content">
+                    <h1 class="hero-block__title">Полночное солнце</h1>
+                    <a href="https://www.kinopoisk.ru/film/924170/?ysclid=m63luxohiw123772392" class="hero-block__link">Подробнее</a>
+                </div>
+
+            </div>
+
+        </section>
+        <section class="about" id="about">
+            <div class="container container_about">
+                <h2 class="about__title">О фильме</h2>
+                <div class="about__content">
+                    <p class="about__text about__text1">Ночами 17-летняя Кэти сочиняет красивые песни под гитару, а днем
+                        она вынуждена скрываться во мраке: её нежная кожа не выносит солнечного света. Но однажды в
+                        полночь Кэти знакомится с Чарли, веселым парнем с очаровательной улыбкой. Внезапная и страстная
+                        любовь яркой вспышкой озаряет жизнь больной девушки. И теперь ради возлюбленного она готова
+                        сгореть в лучах света безумного чувства.</p>
+                    <img src="img/about__img.png" class="about__img">
+                </div>
+                <div class="about__content about__content2" >
+                    <img src="img/about__img2.png" class="about__img">
+                    <p class="about__text about__text2">Кэти Прайс с детства больна меланозом — непереносимостью
+                        солнечного света. Нахождение на солнце даже на короткое время может запустить процесс, который
+                        быстро приведёт к смерти. Кэти вынуждена вести «ночную» жизнь, а дни проводить в комнате с
+                        затемнёнными окнами. У неё только два близких человека: подруга детства Морган и отец, всю свою
+                        жизнь посвятивший дочери. Кэти сочиняет красивые песни под гитару и иногда по ночам поёт их
+                        дежурному на железнодорожной станции неподалёку от дома</p>
+                </div>
+        </section>
+
+        <section class="video">
+            <div class="container container_video">
+                <h2 class="video__title">
+                    Видео
+                </h2>
+                <iframe class="video__video" src="https://www.youtube.com/embed/66OLu10yZjA?si=vdiAcAtt-c2ACryF"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+            </div>
+        </section>
+
+        <section class="gallery" id="gallery">
+            <h2 class="gallery__title">Скриншоты</h2>
+            <ul class="gallery__list">
+                <li class="gallery__item">
+                    <a href="img/gallery__img.png" class="lightzoom gallery__link">
+                        <img class="gallery__img" src="img/gallery__img.png">
+                    </a>
+                </li>
+                <li class="gallery__item">
+                    <a href="img/gallery__img(1).png" class="lightzoom gallery__link">
+                        <img class="gallery__img" src="img/gallery__img(1).png">
+                    </a>
+                </li>
+                <li class="gallery__item">
+                    <a href="img/gallery__img(2).png" class="lightzoom gallery__link">
+                        <img class="gallery__img" src="img/gallery__img(2).png">
+                    </a>
+                </li>
+                <li class="gallery__item">
+                    <a href="img/gallery__img(3).png" class="lightzoom gallery__link">
+                        <img class="gallery__img" src="img/gallery__img(3).png">
+                    </a>
+                </li>
+            </ul>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="container container_footer">
+            <div class="footer__content">
+                <h3 class="footer__title">Мария Самцова</h3>
+                <p class="footer__copy">&copy;2024.Все права защищены</p>
+            </div>
+            <ul class="footer__list">
+                <li class="footer__item">
+                    <a href="https://t.me/marishk_w" class="footer__link">
+                        <img src="img/icon_tg.svg" class="footer__img">
+                    </a>
+                </li>
+                <li class="footer__item">
+                    <a href="https://vk.com/marishk_w" class="footer__link">
+                        <img src="img/icon_vk.svg" class="footer__img">
+                    </a>
+                </li>
+
+            </ul>
+
+        </div>
+    </footer>
+    <script type="text/javascript" src="https://wsxzaq127.github.io/lightzoom.js"></script>
+    <script type="text/javascript">
+ 			jQuery('.lightzoom').lightzoom({speed: 400, viewTitle: true});
+		</script>
+    <script src="js/burger.js"></script>
+</body>
+</html>
